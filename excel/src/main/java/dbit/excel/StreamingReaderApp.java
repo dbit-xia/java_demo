@@ -74,11 +74,11 @@ public class StreamingReaderApp {
         
         for (Sheet sheet : wk){
             System.out.println(sheet.getSheetName());
-            int count = 0;//获取表头列数
+//            int count = 0;//获取表头列数
             List<String> header = new ArrayList<>();//获取表头
             for (Row r : sheet) {
                 if (r.getRowNum()==0){
-                    count = r.getLastCellNum();
+//                    count = r.getLastCellNum();
                     for (Cell c : r) {
                         header.add(getCellValue(c));
                     }
